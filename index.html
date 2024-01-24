@@ -8,29 +8,29 @@
 </head>
 
 <body>
-    <hader>
+    <header>
         <nav>
-            <a herf="#">
+            <a href="./index.html">
                 <img src="./images/logo.svg" alt="logo Сучасної пекарні">
 
             </a>
             <ul>
-                <li><a href="#">Наші традиції</a></li>
-                <li><a href="#">Шеф-кухарі</a></li>
-                <li><a href="#">Формати</a></li>
-                <li><a href="#">Контакти</a></li>
+                <li><a href="#traditions-section">Наші традиції</a></li>
+                <li><a href="#chefs-section">Шеф-кухарі</a></li>
+                <li><a href="#formats-section">Формати</a></li>
+                <li><a href="#contact-section">Контакти</a></li>
 
             </ul>
         </nav>
         <button type="button">Замовити дзвінок</button>
-    </hader>
+    </header>
     <main>
         <section>
             <h1>Сучасна пекарня</h1>
         </section>
         <!-- секция часть страницы, которая тематически групирует содержание и 
             всегда имеет заголовок -->
-        <section>
+        <section id="traditions-section">
             <ul>
                 <li>Великий попит на ринку</li>
                 <li>Доступні за бюджетом формати</li>
@@ -49,7 +49,7 @@
             </p>
             <img src="./images/baker-man.jpg" alt="Пекарь с улыькой смотрит на батоны">
         </section>
-        <section>
+        <section id="chefs-section">
             <h2>Наші найкращі шеф -кухарі</h2>
             <ul>
                 <li>
@@ -77,7 +77,7 @@
             <!-- артикль товар или информация, которая еще будет исользоваться -->
 
         </section>
-        <section>
+        <section id="formats-section">
             <h2>Формати</h2>
             <ul>
                 <li>
@@ -98,21 +98,25 @@
             </ul>
 
         </section>
-        <section>
+        <section id="contact-section">
             <h2>Приєднуйся до мережі пекарень</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.163871257736!2d30.488658577508566!3d50.45667308691444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2sde!4v1706128710323!5m2!1sru!2sde"
+                width="603" height="595" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
 
     </main>
     <footer>
 
         <nav>
-            <a herf="#"><img src="./images/logo.svg" alt="logo Сучасної пекарні">
+            <a href="#"><img src="./images/logo.svg" alt="logo Сучасної пекарні">
             </a>
             <ul>
-                <li><a href="#">Наші традиції</a></li>
-                <li><a href="#">Шеф-кухарі</a></li>
-                <li><a href="#">Формати</a></li>
-                <li><a href="#">Контакти</a></li>
+                <li><a href="#traditions-section">Наші традиції</a></li>
+                <li><a href="#chefs-section">Шеф-кухарі</a></li>
+                <li><a href="#formats-section">Формати</a></li>
+                <li><a href="#contact-section">Контакти</a></li>
 
             </ul>
         </nav>
@@ -140,7 +144,7 @@
                 </li>
             </ul>
             <a href="#" target="_blank">Політика конфіденційності</a>
-            <p>© 2022 Дані захищені</p>
+            <p>&copy; 2022 Дані захищені</p>
         </address>
 
     </footer>
@@ -166,6 +170,8 @@
 
         <a href=""></a> - Элемент создает ссылку на другую страницу
         target="_blank" - Атрибут, который открывает ссылку в новом окне
+        id="название" можно установить якорь и в ссылке указать через #название - переход 
+        по странице
 
         <button></button> - Элемент создает кнопку
         type="button" - атрибут для кнопки,
@@ -178,6 +184,32 @@
         <img src="путь "." - относительній путь" alt="описание изображения" /> - одиночный тег для картинок 
         с двумя обязательными атрибутми (пишем img Tab)
 
+            <table>
+                <caption><caption/> - заголовок таблицы
+                <thead>
+                    <tr>
+                        <th>1</th>
+                        <th>2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    tr*4>td*4     - сокращение для ввода
+                </tbody>
+                <tfoot></tfoot>
+            </table>
+            <td rowspan="2">  - обьеденяет рядки
 
-            некст интерактивные элементы время "Модуль №3 53:09"
+        Символы. лучше использовать коды к ним.
+
+        <iframe>   -  можно вставить одну страницу в другую например гугл мап или ютуб
+
+        <video> - так же как и в аудио webm формат предпочтительнее чем Мп4
+            type="video/webm"  - атрибут указывающий формат видео
+        <audio controls> controls - важный атрибут, все остальные атрибуты на MDN
+            <source src="путь">
+        <audio/>    
+
+        Валидация - проверка коду по стандартам validator.w3.org
+
+            некст введение в цсс "Модуль №5"
     -->
